@@ -329,14 +329,14 @@ useHead({
 const title = "Dr. Bruno Barbosa";
 const description =
   "Dr. Bruno Barbosa é especialista em nutrologia de alta performance, oferecendo soluções personalizadas para otimizar a saúde e o bem-estar. Com uma abordagem baseada em ciência e pesquisa avançada, ele ajuda atletas, profissionais e indivíduos em busca de excelência a alcançar seus objetivos nutricionais e de desempenho. Marque sua consulta e descubra como a nutrologia pode impulsionar sua performance e qualidade de vida.";
-const ogimage = "http://localhost:3000/__og_image__/og.png";
+const ogimage = "https://www.drbrunobarbosa.com.br/__og_image__/og.png";
 useSeoMeta({
   title: title,
   ogTitle: title,
   description: description,
   ogDescription: description,
   twitterCard: "summary_large_image",
-  ogUrl: "http://titogarrido.duckdns.org:3000",
+  ogUrl: "https://www.drbrunobarbosa.com.br",
   twitterTitle: title,
   twitterDescription: description,
   ogImage: ogimage,
@@ -345,7 +345,7 @@ useSeoMeta({
 
 const ogImageOptions = {
   siteName: "Dr. Bruno Barbosa",
-  siteLogo: "http://localhost:3000/logo-branca-h.png",
+  siteLogo: "http://www.drbrunobarbosa.com.br/logo-branca-h.png",
   padding: '100px 100px'
 };
 

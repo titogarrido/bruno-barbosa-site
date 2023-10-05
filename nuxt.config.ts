@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  site: { url: "https://drbrunobarbosa.com.br" },
+  site: { url: "https://www.drbrunobarbosa.com.br" },
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
   postcss: {
