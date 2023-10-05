@@ -9,7 +9,7 @@
           <div class="flex items-center flex-1">
             <div class="flex items-center justify-between w-full lg:w-auto">
               <a href="#">
-                <NuxtImg class="w-96" src="/logo-branca-h.png" alt="" />
+                <img class="w-96" src="/logo-branca-h.png" alt="" />
               </a>
               <div class="-mr-2 flex items-center lg:hidden">
                 <PopoverButton
@@ -33,9 +33,9 @@
             </div>
           </div>
           <div class="hidden lg:flex lg:items-center lg:space-x-6">
-            <NuxtImg class="h-6" src="/facebook.png" />
-            <NuxtImg class="h-6" src="/instagram.png" />
-            <NuxtImg class="h-6" src="/tik-tok.png" />
+            <img class="h-6" src="/facebook.png" />
+            <img class="h-6" src="/instagram.png" />
+            <img class="h-6" src="/tik-tok.png" />
           </div>
         </nav>
       </div>
@@ -72,7 +72,7 @@
           >
             <div class="px-5 pt-4 flex items-center justify-between">
               <div>
-                <NuxtImg class="h-16" src="/logo-preta-h.png" alt="" />
+                <img class="h-16" src="/logo-preta-h.png" alt="" />
               </div>
               <div class="-mr-2">
                 <PopoverButton
@@ -148,7 +148,7 @@
                 class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
               >
                 <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
-                <NuxtImg class="" src="/photo2.png" alt="" />
+                <img class="" src="/photo2.png" alt="" />
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@
                 class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
               >
                 <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
-                <NuxtImg class="" src="/photo4.png" alt="" />
+                <img class="" src="/photo4.png" alt="" />
               </div>
             </div>
             <div
@@ -269,7 +269,7 @@
               class="font-oswald text-xl p-4 lg:text-5xl lg:p-8 bg-[#8C6F56] hover:bg-[#012340] rounded-xl flex items-center"
             >
               <span class="mr-4">Agende uma Consulta</span
-              ><NuxtImg class="h-10" src="/whatsapp.png" />
+              ><img class="h-10" src="/whatsapp.png" />
             </div>
           </div>
         </div>
