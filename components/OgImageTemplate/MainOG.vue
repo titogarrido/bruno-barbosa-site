@@ -11,7 +11,7 @@ const props = defineProps({
 
 <template>
   <div class="w-full h-full flex flex-col text-white bg-[#012340] font-oswald items-center justify-center">
-    <!-- <img class="w-full" src="/logo-branca-h.png"/> -->
+    <!-- <NuxtImg class="w-full" src="/logo-branca-h.png"/> -->
     <div class="text-7xl uppercase">Dr. Bruno Barbosa</div>
     <div class="uppercase mt-10 text-4xl">Saúde e Bem Estar</div>
   </div>
