@@ -44,12 +44,12 @@
           class="relative max-w-7xl mx-auto flex items-center justify-center px-4 sm:px-6"
         >
           <div class="hidden space-x-8 lg:flex">
-            <a
+            <NuxtLink
               v-for="item in subnavigation"
               :key="item.name"
-              :href="item.href"
+              :to="item.href"
               class="text-base font-normal uppercase text-[#012340] hover:text-black hover:underline"
-              >{{ item.name }}</a
+              >{{ item.name }}</NuxtLink
             >
           </div>
         </nav>
@@ -199,7 +199,7 @@
 
       <!--- TERCEIRA SECAO -->
 
-      <div class="pt-10 bg-[#e2dcd7] sm:pt-16 lg:py-24 lg:overflow-hidden">
+      <div id="cards" class="pt-10 bg-[#e2dcd7] sm:pt-16 lg:py-24 lg:overflow-hidden">
         <div class="mx-auto max-w-7xl lg:px-0">
           <div class="flex items-center justify-center">
             <span class="font-oswald text-4xl pb-10"> Áreas de Atuação </span>
@@ -266,7 +266,7 @@
               Inicie seu tratamento agora
             </div>
             <div
-              class="font-oswald text-xl p-4 lg:text-5xl lg:p-8 bg-[#8C6F56] hover:bg-[#012340] rounded-xl flex items-center"
+              class="font-oswald text-xl p-4 cursor-pointer lg:text-5xl lg:p-8 bg-[#8C6F56] hover:bg-[#012340] rounded-xl flex items-center"
             >
               <span class="mr-4">Agende uma Consulta</span
               ><NuxtImg class="h-10" src="/whatsapp.png" />
@@ -357,11 +357,11 @@ const navigation = [
   { name: "Atendimento", href: "#atendimento" },
 ];
 const subnavigation = [
-  { name: "Emagrecimento", href: "#" },
-  { name: "Implante Hormonal", href: "#" },
-  { name: "Terapia Injetável", href: "#" },
-  { name: "Medicina Integrativa", href: "#" },
-  { name: "Hipertrofia e Alta Performance", href: "#" },
+  { name: "Emagrecimento", href: "#cards" },
+  { name: "Implante Hormonal", href: "#cards" },
+  { name: "Terapia Injetável", href: "#cards" },
+  { name: "Medicina Integrativa", href: "#cards" },
+  { name: "Hipertrofia e Alta Performance", href: "#cards" },
 ];
 </script>
 
