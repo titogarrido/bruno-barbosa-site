@@ -95,9 +95,10 @@
               </div>
               <div class="mt-6 px-5">
                 <a
-                  href="#"
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=5571991960041"
                   class="block text-center w-full py-3 px-4 rounded-md shadow bg-[#012340] text-white font-medium hover:bg-[#072B73]"
-                  >Agende sua consulta</a
+                  >Agende uma consulta</a
                 >
               </div>
             </div>
@@ -131,12 +132,13 @@
                   <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
                     <div class="sm:flex">
                       <div class="mt-3 sm:mt-0">
-                        <button
-                          type="submit"
+                        <a
+                        target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5571991960041"
                           class="block w-full py-3 px-4 rounded-md shadow bg-[#012340] text-white font-medium hover:bg-[#8C6F56] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
                         >
-                          Agende sua consulta
-                        </button>
+                          Agende uma consulta
+                        </a>
                       </div>
                     </div>
                   </form>
@@ -288,12 +290,14 @@
             <div class="font-oswald text-4xl font-thin">
               Inicie seu tratamento agora
             </div>
-            <div
+            <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5571991960041"
               class="font-oswald text-xl p-4 cursor-pointer lg:text-5xl lg:p-8 bg-[#8C6F56] hover:bg-[#012340] rounded-xl flex items-center"
             >
               <span class="mr-4">Agende uma Consulta</span
               ><NuxtImg class="h-10" src="/whatsapp.png" />
-            </div>
+            </a>
           </div>
         </div>
       </div>

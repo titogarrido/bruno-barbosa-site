@@ -2,12 +2,13 @@
   <div>
     <!-- Your other content goes here -->
 
-    <button
-      @click="handleClick"
+    <a
+    target="_blank"
+    href="https://api.whatsapp.com/send?phone=5571991960041"
       class="fixed bottom-6 right-6 bg-green-600 text-white p-4 rounded-full hover:bg-green-700 focus:outline-none focus:bg-green-700 shadow-lg"
     >
       <img class="h-8" src="/whatsapp.png" />
-    </button>
+    </a>
   </div>
 </template>
 
