@@ -188,7 +188,7 @@
                     Apaixonado pela Nutrologia e Medicina Integrativa desde a
                     formação pela UFBA (2016), Dr. Bruno Barbosa já contabiliza
                     centenas de pacientes que passaram por uma verdadeira
-                    mudança de vida nos últimos anos. E pra melhor! Prioriza
+                    mudança de vida nos últimos anos. E para melhor! Prioriza
                     abordar cada indivíduo de maneira única, combinando
                     tecnologia de ponta e atendimento humanizado para oferecer
                     os melhores resultados a seus pacientes.
