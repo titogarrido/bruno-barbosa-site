@@ -9,7 +9,11 @@
           <div class="flex items-center flex-1">
             <div class="flex items-center justify-between w-full lg:w-auto">
               <a href="#">
-                <NuxtImg class="h-16 lg:w-96 lg:h-fit" src="/logo-branca-h.png" alt="" />
+                <NuxtImg
+                  class="h-16 lg:w-96 lg:h-fit"
+                  src="/logo-branca-h.png"
+                  alt=""
+                />
               </a>
               <div class="-mr-2 flex items-center lg:hidden">
                 <PopoverButton
@@ -34,7 +38,9 @@
           </div>
           <div class="hidden lg:flex lg:items-center lg:space-x-6">
             <NuxtImg class="h-6" src="/facebook.png" />
-            <a target="_blank" href="https://instagram.com/dr.brunobarbosa"><NuxtImg class="h-6" src="/instagram.png" /></a>
+            <a target="_blank" href="https://instagram.com/dr.brunobarbosa"
+              ><NuxtImg class="h-6" src="/instagram.png"
+            /></a>
             <NuxtImg class="h-6" src="/tik-tok.png" />
           </div>
         </nav>
@@ -93,7 +99,6 @@
                   >{{ item.name }}</a
                 >
               </div>
-              
             </div>
           </div>
         </PopoverPanel>
@@ -126,8 +131,8 @@
                     <div class="sm:flex">
                       <div class="mt-3 sm:mt-0">
                         <a
-                        target="_blank"
-                        href="https://api.whatsapp.com/send?phone=5571991960041"
+                          target="_blank"
+                          href="https://api.whatsapp.com/send?phone=5571991960041"
                           class="block w-full py-3 px-4 rounded-md shadow bg-[#012340] text-white font-medium hover:bg-[#8C6F56] text-center"
                         >
                           Agende uma consulta
@@ -178,12 +183,15 @@
                     >Dr. Bruno Barbosa</span
                   >
                 </h1>
-                <div class="text-md max-w-prose mt-4 pb-10">
+                <div class="text-md max-w-prose mt-4 pb-10 text-justify">
                   <p>
-                    Oh yeah. It's the best part. It's crunchy, it's explosive,
-                    it's where the muffin breaks free of the pan and sort of
-                    does it's own thing. I'll tell you. That's a million dollar
-                    idea right there. Just sell the tops.
+                    Apaixonado pela Nutrologia e Medicina Integrativa desde a
+                    formação pela UFBA (2016), Dr. Bruno Barbosa já contabiliza
+                    centenas de pacientes que passaram por uma verdadeira
+                    mudança de vida nos últimos anos. E pra melhor! Prioriza
+                    abordar cada indivíduo de maneira única, combinando
+                    tecnologia de ponta e atendimento humanizado para oferecer
+                    os melhores resultados a seus pacientes.
                   </p>
                 </div>
               </div>
@@ -284,8 +292,8 @@
               Inicie seu tratamento agora
             </div>
             <a
-            target="_blank"
-            href="https://api.whatsapp.com/send?phone=5571991960041"
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=5571991960041"
               class="font-oswald text-xl p-4 cursor-pointer lg:text-5xl lg:p-8 bg-[#8C6F56] hover:bg-[#012340] rounded-xl flex items-center"
             >
               <span class="mr-4">Agende uma Consulta</span
