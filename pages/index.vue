@@ -9,11 +9,11 @@
           <div class="flex items-center flex-1">
             <div class="flex items-center justify-between w-full lg:w-auto">
               <a href="#">
-                <NuxtImg class="w-96" src="/logo-branca-h.png" alt="" />
+                <NuxtImg class="h-16 lg:w-96 lg:h-fit" src="/logo-branca-h.png" alt="" />
               </a>
               <div class="-mr-2 flex items-center lg:hidden">
                 <PopoverButton
-                  class="bg-slate-200 rounded-md p-2 inline-flex items-center justify-center text-gray-800 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
+                  class="bg-[#BFB3A8] rounded-md p-2 inline-flex items-center justify-center text-gray-800 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
                 >
                   <span class="sr-only">Open main menu</span>
                   <Bars3Icon class="h-6 w-6" aria-hidden="true" />
@@ -93,14 +93,7 @@
                   >{{ item.name }}</a
                 >
               </div>
-              <div class="mt-6 px-5">
-                <a
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=5571991960041"
-                  class="block text-center w-full py-3 px-4 rounded-md shadow bg-[#012340] text-white font-medium hover:bg-[#072B73]"
-                  >Agende uma consulta</a
-                >
-              </div>
+              
             </div>
           </div>
         </PopoverPanel>
@@ -135,7 +128,7 @@
                         <a
                         target="_blank"
                         href="https://api.whatsapp.com/send?phone=5571991960041"
-                          class="block w-full py-3 px-4 rounded-md shadow bg-[#012340] text-white font-medium hover:bg-[#8C6F56] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
+                          class="block w-full py-3 px-4 rounded-md shadow bg-[#012340] text-white font-medium hover:bg-[#8C6F56] text-center"
                         >
                           Agende uma consulta
                         </a>
