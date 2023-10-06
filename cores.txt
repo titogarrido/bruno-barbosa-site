@@ -1,0 +1,38 @@
+https://color.adobe.com/pt/trends/Ui/ux
+
+#072B73
+#012340
+#313940
+#8C6F56
+#BFB3A8
+
+RGB 7, 43, 115
+HSB 220, 94, 45
+CMYK 94, 63, 0, 55
+LAB 20, 19, -45
+Catalina Blue
+Texto : Branco | Proporção de contraste 13.11 : 1
+RGB 1, 35, 64
+HSB 208, 98, 25
+CMYK 98, 46, 0, 75
+LAB 13, 1, -22
+Rhapsody In Blue
+Texto : Branco | Proporção de contraste 15.96 : 1
+RGB 49, 57, 64
+HSB 208, 23, 25
+CMYK 23, 11, 0, 75
+LAB 23, -1, -5
+Night Wizard
+Texto : Branco | Proporção de contraste 11.73 : 1
+RGB 140, 111, 86
+HSB 28, 39, 55
+CMYK 0, 21, 39, 45
+LAB 49, 8, 19
+Caravel Brown
+Texto : Preto | Proporção de contraste 4.52 : 1
+RGB 191, 179, 168
+HSB 28, 12, 75
+CMYK 0, 6, 12, 25
+LAB 74, 3, 7
+Drifting
+Texto : Preto | Proporção de contraste 10.23 : 1
