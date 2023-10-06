@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-6 border rounded-xl bg-stone-100 shadow-xl flex flex-col items-center justify-center"
+    class="p-6 border rounded-xl bg-stone-100 shadow-xl flex flex-col items-center justify-center min-h-full mt-4"
   >
     <div>
       <img class="h-24" :src="image" />

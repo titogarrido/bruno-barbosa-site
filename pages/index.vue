@@ -125,7 +125,7 @@
                 <p
                   class="mt-3 text-base text-white sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
                 >
-                  Dr. Bruno Barbosa - CRM-BA XXXXX
+                  Dr. Bruno Barbosa - CRM-BA 28.988
                 </p>
                 <div class="mt-10 sm:mt-12">
                   <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
@@ -199,32 +199,55 @@
 
       <!--- TERCEIRA SECAO -->
 
-      <div id="cards" class="pt-10 bg-[#e2dcd7] sm:pt-16 lg:py-24 lg:overflow-hidden">
+      <div
+        id="cards"
+        class="pt-10 bg-[#e2dcd7] sm:pt-16 lg:py-24 lg:overflow-hidden"
+      >
         <div class="mx-auto max-w-7xl lg:px-0">
           <div class="flex items-center justify-center">
             <span class="font-oswald text-4xl pb-10"> Áreas de Atuação </span>
           </div>
-          <div class="lg:grid lg:grid-cols-3 lg:gap-8 space-y-4">
+          <div class="lg:grid lg:grid-cols-3 lg:gap-8">
             <Card
               image="/emagrecimento.png"
               title="Emagrecimento"
-              content="Oh yeah. It's the best part. It's crunchy, it's explosive,
-                  it's where the muffin breaks free of the pan and sort of does
-                  it's own thing. I'll tell you. That's a million dollar idea
-                  right there. Just sell the tops."
+              content="Abordagem personalizada para uma perda de peso saudável e sustentável. Com orientação individualizada e plano de emagrecimento adaptado ao seu estilo de vida, você além de perder peso, vai ganhar saúde e confiança."
             ></Card>
-            <Card image="/soro.png" title="Soroterapia"></Card>
+            <Card
+              image="/muscle.png"
+              title="Hipertrofia e Alta performance"
+              content="Ganhe massa muscular com alta performance. Desenvolvemos planos adaptados, incluindo orientação nutricional e estratégias avançadas para alcançar seus objetivos de forma segura e eficaz."
+            ></Card>
+            <Card
+              image="/soro.png"
+              title="Soroterapia"
+              content="Revitalize seu corpo de dentro pra fora. Experimente a soroterapia personalizada e tenha mais energia e bem estar todos os dias."
+            ></Card>
             <Card
               image="/slim.png"
               title="Acompanhamento Pós-Bariátrica"
+              content="Oferecemos suporte personalizado para garantir que você alcance e mantenha seus objetivos de saúde. Dispomos de equipe especializada para abordar todos os cuidados necessários, como orientação nutricional, terapias integrativas e muito mais."
             ></Card>
-            <Card image="/stethoscope.png" title="Medicina Integrativa"></Card>
-            <Card image="/checkup.png" title="Check-ups"></Card>
+            <Card
+              image="/stethoscope.png"
+              title="Medicina Integrativa"
+              content="Vemos você como um todo, não apenas seus sintomas. Nossa abordagem inclui uma variedade de terapias destinadas a promocao da saúde."
+            ></Card>
+            <Card
+              image="/checkup.png"
+              title="Check-ups"
+              content="Realizamos avaliações detalhadas para que você tenha o controle total da sua saúde. O objetivo é entender o seu corpo, prevenir problemas antes que surjam e garantir uma vida saudável e vibrante."
+            ></Card>
             <Card
               image="/reposicao.png"
               title="Terapia de Reposição Hormonal"
+              content="Recupere o seu equilíbrio hormonal através de uma terapia segura e eficaz."
             ></Card>
-            <Card image="/gender.png" title="Implante Hormonal"></Card>
+            <Card
+              image="/gender.png"
+              title="Implante Hormonal"
+              content="Descubra os benefícios dos implantes hormonais: seguros, convenientes e eficazes. Esses dispositivos subcutâneos podem melhorar significativamente sua qualidade de vida."
+            ></Card>
           </div>
         </div>
       </div>
@@ -285,7 +308,7 @@
           <div class="lg:grid lg:grid-cols-3 lg:gap-8 space-y-6">
             <div class="flex flex-col justify-center items-center px-4">
               <NuxtImg src="/logo-branca-h.png" />
-              <div>CRM-BA: XXXXXX</div>
+              <div>CRM-BA: 28.988</div>
             </div>
             <div
               class="flex flex-col justify-center items-center space-y-2 px-4"
@@ -297,8 +320,8 @@
               </div>
             </div>
             <div class="flex flex-col justify-center items-center px-4">
-              <div>Telefone: (71) XXXX-XXXX</div>
-              <div>Email: xxxx@xxxx.com</div>
+              <div>Telefone: (71) 99196-0041</div>
+              <div>Email: contato@drbrunobarbosa.com.br</div>
             </div>
           </div>
         </div>
@@ -340,16 +363,16 @@ useSeoMeta({
   twitterTitle: title,
   twitterDescription: description,
   ogImage: ogimage,
-  twitterImage: ogimage
+  twitterImage: ogimage,
 });
 
 const ogImageOptions = {
   siteName: "Dr. Bruno Barbosa",
   siteLogo: "http://www.drbrunobarbosa.com.br/logo-branca-h.png",
-  padding: '100px 100px'
+  padding: "100px 100px",
 };
 
-defineOgImage({  component: 'MainOG' })
+defineOgImage({ component: "MainOG" });
 
 const navigation = [
   { name: "Home", href: "#" },
