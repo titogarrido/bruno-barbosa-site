@@ -34,7 +34,7 @@
           </div>
           <div class="hidden lg:flex lg:items-center lg:space-x-6">
             <NuxtImg class="h-6" src="/facebook.png" />
-            <NuxtImg class="h-6" src="/instagram.png" />
+            <a target="_blank" href="https://instagram.com/dr.brunobarbosa"><NuxtImg class="h-6" src="/instagram.png" /></a>
             <NuxtImg class="h-6" src="/tik-tok.png" />
           </div>
         </nav>
