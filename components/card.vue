@@ -5,7 +5,7 @@
     <div>
       <img class="h-24" :src="image" />
     </div>
-    <div class="mt-2 text-lg uppercase">{{ title }}</div>
+    <div class="mt-2 text-lg uppercase text-center">{{ title }}</div>
     <div class="text-md text-justify mt-4">
       <p>
         {{ content }}

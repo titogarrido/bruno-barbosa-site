@@ -10,7 +10,7 @@
             <div class="flex items-center justify-between w-full lg:w-auto">
               <a href="#">
                 <NuxtImg
-                  class="h-16 lg:w-96 lg:h-fit"
+                  class="w-3/4 lg:w-1/2"
                   src="/logo-branca-h.png"
                   alt=""
                 />
@@ -250,6 +250,11 @@
               image="/gender.png"
               title="Implante Hormonal"
               content="Descubra os benefícios dos implantes hormonais: seguros, convenientes e eficazes. Esses dispositivos subcutâneos podem melhorar significativamente sua qualidade de vida."
+            ></Card>
+            <Card
+              image="/analytics.png"
+              title="Avaliação Biométrica e Bioimpedância"
+              content="Descubra seu estado de saúde atual e monitore seu progresso com nossa tecnologia de bioimpedância de última geração."
             ></Card>
           </div>
         </div>
