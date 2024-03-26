@@ -132,7 +132,7 @@
                       <div class="mt-3 sm:mt-0">
                         <a
                           target="_blank"
-                          href="https://api.whatsapp.com/send?phone=5571991960041"
+                          href="https://api.whatsapp.com/send?phone=5571999985001"
                           class="block w-full py-3 px-4 rounded-md shadow bg-[#012340] text-white font-medium hover:bg-[#8C6F56] text-center"
                         >
                           Agende uma consulta
@@ -298,7 +298,7 @@
             </div>
             <a
               target="_blank"
-              href="https://api.whatsapp.com/send?phone=5571991960041"
+              href="https://api.whatsapp.com/send?phone=5571999985001"
               class="font-oswald text-xl p-4 cursor-pointer lg:text-5xl lg:p-8 bg-[#8C6F56] hover:bg-[#012340] rounded-xl flex items-center"
             >
               <span class="mr-4">Agende uma Consulta</span
@@ -323,14 +323,14 @@
             <div
               class="flex flex-col justify-center items-center space-y-2 px-4"
             >
-              <div>Centro Médico Bela Vista</div>
+              <div>Clínica Heal</div>
               <div class="text-center">
-                Shopping Bela Vista - Alameda Euvaldo Luz, 92 Piso L2 -
-                Pernambués, Salvador - BA, 41098-020
+                Shopping da Cidade | Av. ACM, 1298 | Itaigara - Salvador - BA
               </div>
             </div>
             <div class="flex flex-col justify-center items-center px-4">
-              <div>Telefone: (71) 99196-0041</div>
+              <div>Telefone: (71) 2132-6494</div>
+              <div>Whatsapp: (71) 99998-5001</div>
               <div>Email: contato@drbrunobarbosa.com.br</div>
             </div>
           </div>
