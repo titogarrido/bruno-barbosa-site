@@ -223,7 +223,7 @@
             ></Card>
             <Card
               image="/soro.png"
-              title="Soroterapia"
+              title="Terapia Injetável"
               content="Revitalize seu corpo de dentro pra fora. Experimente a soroterapia personalizada e tenha mais energia e bem estar todos os dias."
             ></Card>
             <Card
