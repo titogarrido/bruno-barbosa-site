@@ -1,5 +1,15 @@
 <template>
   <div class="relative overflow-hidden">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WQ6QRQ9G"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <Popover as="header" class="relative">
       <div class="bg-[#012340] p-6">
         <nav
@@ -132,7 +142,7 @@
                       <div class="mt-3 sm:mt-0">
                         <a
                           target="_blank"
-                          href="https://api.whatsapp.com/send?phone=5571999985001"
+                          href="https://wa.me/5571999985001?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20do%20Dr%20Bruno%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20por%20favor.%20"
                           class="block w-full py-3 px-4 rounded-md shadow bg-[#012340] text-white font-medium hover:bg-[#8C6F56] text-center"
                         >
                           Agende uma consulta
@@ -358,6 +368,14 @@ useHead({
       href: "/favicon.ico",
     },
   ],
+  script: [
+    {
+      // Google Tag Manager
+      innerHTML:
+        "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WQ6QRQ9G');",
+    },
+  ],
+  __dangerouslyDisableSanitizers: ["script"],
 });
 const title = "Dr. Bruno Barbosa";
 const description =
