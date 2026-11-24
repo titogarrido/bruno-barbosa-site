@@ -1,75 +1,10 @@
-# Nuxt 3 Minimal Starter
+# Site do Dr. Bruno Barbosa
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Site estático (HTML, CSS e JavaScript, sem etapa de build) publicado em https://www.drbrunobarbosa.com.br.
 
-## Setup
+Esta pasta é gerada: não edite os arquivos aqui. A origem fica no projeto de conteúdo, em
+`dr-bruno-deploy/nova-landing/`, e esta versão é montada com `node scripts/publicar-site.js`.
 
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- `vercel.json`: configura a Vercel para servir os arquivos como estão.
+- `sitemap.xml` e `robots.txt`: endereços para os buscadores.
+- O site anterior (Nuxt) permanece no histórico do Git.

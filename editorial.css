@@ -1,0 +1,181 @@
+/* Refinamento UX/UI editorial (18/10/2026).
+   Só apresentação, ritmo e movimento: paleta, fontes, textos, links e ferramentas da identidade v2 ficam como estão.
+   Carregado depois de site.css e refino.css em todas as páginas da landing. */
+
+/* ---------- Base: respiro e legibilidade ---------- */
+.section{padding-block:clamp(88px,9vw,144px)}
+.section-heading{margin-bottom:clamp(40px,5vw,72px)}
+.fine{font-size:15px}
+figure figcaption{font-size:13px}
+.desktop-nav{gap:34px}
+.desktop-nav a{font-size:14.5px;letter-spacing:.01em}
+.header .button-small{gap:0}
+.header .button-small .desktop-only{margin-left:.35em}
+
+/* ---------- Hero: quem é, o que faz e onde atende, antes da primeira rolagem ---------- */
+.hero{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(40px,6vw,104px);align-items:stretch;padding-top:clamp(36px,4.5vw,64px);padding-bottom:clamp(56px,6vw,96px)}
+@media(min-width:901px){.hero{min-height:min(calc(100svh - 88px),920px)}}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:0}
+.hero-id{display:flex;flex-direction:column;gap:14px;margin-bottom:clamp(30px,3.4vw,44px)}
+.hero-name{font-family:var(--serif);font-size:clamp(30px,2.5vw,40px);font-weight:500;line-height:1;letter-spacing:-.02em}
+.hero-role{display:flex;align-items:center;gap:12px;font-family:var(--caps);font-size:11px;font-weight:600;line-height:1.4;letter-spacing:.14em;text-transform:uppercase}
+.hero-role::before{content:"";width:28px;height:1px;background:var(--gold);flex:none}
+.hero h1{font-size:clamp(56px,5.4vw,84px);line-height:.98}
+.hero-lead{font-size:clamp(20px,1.55vw,23px);max-width:21em;margin-top:28px}
+.hero-actions{margin-top:36px;align-items:center}
+.hero-facts{display:grid;grid-template-columns:1.2fr .9fr 1.3fr;gap:0 28px;margin:clamp(40px,4.5vw,64px) 0 0;padding-top:20px;border-top:1px solid var(--line)}
+.hero-facts dt{font-family:var(--caps);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+.hero-facts dd{margin:0;font-size:14px;line-height:1.55}
+.hero-photo picture{min-height:0}
+.hero-photo figcaption i{font-style:normal;font-weight:400}
+
+/* ---------- Aos 70: composição assimétrica, lista numerada da v2 ---------- */
+.future-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,120px);align-items:start}
+.future h2{font-size:clamp(44px,4.6vw,70px);max-width:11em}
+.future-list{grid-template-columns:1fr;margin:0;counter-reset:futuro;border-bottom:1px solid var(--line)}
+.future-list li{display:grid;grid-template-columns:48px 1fr;align-items:baseline;padding:20px 0;font-size:clamp(28px,2.4vw,36px);counter-increment:futuro}
+.future-list li::before{content:counter(futuro,decimal-leading-zero);font-family:var(--sans);font-size:15px;font-weight:400;color:var(--gold);font-variant-numeric:tabular-nums}
+.future-list li:last-child{grid-column:auto}
+.future-close{margin-top:28px;max-width:30em}
+@media(min-width:901px){.future-layout>div:first-child{position:sticky;top:150px}}
+
+/* ---------- Cuidado médico: coluna de leitura e etapas com número grande ---------- */
+.care-layout{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(48px,8vw,128px)}
+.care-layout .body-copy{max-width:31em}
+.body-copy .care-statement{font-size:clamp(28px,2.3vw,34px);line-height:1.22;margin-top:36px;padding-top:24px;border-top:1px solid var(--gold);max-width:16em}
+.care-steps{margin-top:clamp(64px,8vw,112px)}
+.care-steps li>span{display:block;font-size:34px;font-weight:250;line-height:1}
+.care-steps h3{margin-top:22px}
+
+/* ---------- Experiências: um relato em destaque, dois de apoio ---------- */
+.stories-grid{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:0 clamp(40px,6vw,96px);margin-top:clamp(40px,5vw,64px)}
+.stories-grid figure{border-top:1px solid var(--line);padding:28px 0 34px}
+.stories-grid figure:first-child{grid-row:1/3;border-top:1px solid var(--gold);padding-top:34px}
+.stories-grid figure:first-child blockquote{font-size:clamp(32px,3vw,44px);line-height:1.2}
+.stories-grid figure:not(:first-child) blockquote{font-size:clamp(22px,1.75vw,27px);line-height:1.34}
+.stories-grid figcaption{font-size:13px;letter-spacing:.02em}
+
+/* ---------- Onde atendo: colunas com filetes em vez de três caixas ---------- */
+.locations-grid{gap:0;border-top:1px solid var(--line)}
+.location-card{border:0;border-left:1px solid var(--line);padding:34px clamp(20px,2.6vw,40px) 6px}
+.location-card:first-child{border-left:0;padding-left:0}
+.location-card:last-child{padding-right:0}
+.location-city{border-bottom:0;padding-bottom:0;margin-bottom:22px;font-size:clamp(34px,3vw,44px)}
+.location-city span{border:0;padding:0;letter-spacing:.14em}
+.location-card .button{background:transparent;color:var(--navy);border-color:var(--navy)}
+.location-card .button:hover{background:var(--navy);color:var(--paper)}
+.location-card .contact-phone{font-size:14px}
+@media(hover:hover) and (pointer:fine){.location-card:hover{border-color:var(--line)}}
+
+/* ---------- Páginas internas ---------- */
+.crumbs{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;margin-bottom:clamp(28px,4vw,48px)}
+.crumbs a{text-decoration:none;border-bottom:1px solid var(--gold)}
+.crumbs a:hover{border-color:var(--navy)}
+.page-hero .section-heading{grid-template-columns:repeat(12,minmax(0,1fr));gap:28px 0;margin-bottom:0}
+.page-hero .section-heading>div{grid-column:1/-1}
+.page-hero .section-heading>.intro{grid-column:7/-1;max-width:30em}
+.page-hero h1{font-size:clamp(52px,6.2vw,100px);max-width:12em}
+.page-hero.with-grid .pillars-grid{margin-top:clamp(56px,6vw,88px)}
+.page-about .crumbs{margin-bottom:28px}
+
+/* O que acompanhamos: lista editorial em duas colunas (mesmo details/summary) */
+.pillars-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(40px,6vw,96px);border:0}
+.pillar{border:0;border-top:1px solid var(--line);height:auto}
+.pillar:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+.pillar summary{display:grid;grid-template-columns:44px 1fr;column-gap:16px;padding:28px 0;min-height:0}
+.pillar summary:hover{background:transparent}
+.pillar .card-number{grid-row:1/4;margin:9px 0 0}
+.pillar h3,.pillar summary>p,.pillar .expand-label{grid-column:2}
+.pillar h3{font-size:clamp(28px,2.3vw,34px);margin-bottom:8px}
+.pillar .expand-label{justify-content:flex-start;gap:14px;padding-top:16px;margin-top:0}
+.pillar[open]{background:transparent}
+.pillar-detail{padding:0 0 30px 60px;max-width:34em}
+
+/* Ferramentas: grade sem caixas, filetes e ação clara */
+.tools-grid{border:0;gap:0 clamp(32px,4vw,64px)}
+.tool-card{border:0;border-top:1px solid var(--line);padding:32px 0 40px}
+.tool-card:hover{background:transparent;border-color:var(--gold)}
+.tool-card:hover h3{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:1px;text-underline-offset:7px}
+.tool-card .tool-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;font-size:13px}
+.tool-meta span{border:1px solid var(--line);padding:6px 10px;line-height:1.3}
+.tool-meta span:first-child{font-family:var(--caps);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;display:inline-flex;align-items:center}
+
+/* ---------- Menu móvel ---------- */
+.mobile-menu a{display:flex;align-items:center;justify-content:space-between;font-size:32px;padding:15px 0}
+.mobile-menu a::after{content:"→";font-family:var(--sans);font-size:18px;color:var(--gold-ink)}
+.mobile-menu a[aria-current="page"]{color:var(--gold-ink)}
+.mobile-menu a:last-of-type{margin-top:28px;justify-content:center;gap:14px;border:1px solid var(--navy);background:var(--navy);color:var(--paper);font-family:var(--caps);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:18px;min-height:56px}
+.mobile-menu a:last-of-type::after{content:"↗";color:var(--paper);font-size:14px}
+
+/* ---------- Movimento: entrada discreta, nada contínuo ---------- */
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes unveil{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes reveal{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:no-preference){
+ .hero-id,.hero h1,.hero-lead,.hero-actions,.hero-facts{animation:rise 900ms var(--ease-editorial) both}
+ .hero h1{animation-delay:70ms}.hero-lead{animation-delay:150ms}.hero-actions{animation-delay:210ms}.hero-facts{animation-delay:290ms}
+ .hero-photo picture{animation:unveil 1000ms var(--ease-editorial) both}
+ .reveal-pending{opacity:0}
+ .enter-view{animation:reveal 760ms var(--ease-editorial) both;animation-delay:calc(var(--i,0) * 70ms)}
+ .mobile-menu:not([hidden]) a{animation:rise 420ms var(--ease-editorial) both}
+ .mobile-menu:not([hidden]) a:nth-child(2){animation-delay:30ms}.mobile-menu:not([hidden]) a:nth-child(3){animation-delay:60ms}.mobile-menu:not([hidden]) a:nth-child(4){animation-delay:90ms}.mobile-menu:not([hidden]) a:nth-child(5){animation-delay:120ms}.mobile-menu:not([hidden]) a:nth-child(6){animation-delay:150ms}
+}
+
+/* ---------- Tablet ---------- */
+@media(max-width:1100px){
+ .hero h1{font-size:clamp(54px,6.4vw,68px)}
+ .hero-facts{grid-template-columns:1fr}
+ .hero-facts>div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+ .hero-facts>div:first-child{border-top:0;padding-top:0}
+ .hero-facts dt{margin:3px 0 0}
+ .care-steps li{padding-inline:20px}
+ .hero-actions{align-items:flex-start}
+}
+@media(max-width:900px){
+ .future-layout{grid-template-columns:1fr;gap:36px}
+ .stories-grid{grid-template-columns:1fr}
+ .stories-grid figure:first-child{grid-row:auto}
+ .locations-grid{border-top:0}
+ .location-card,.location-card:first-child,.location-card:last-child{border-left:0;border-top:1px solid var(--line);padding:30px 0}
+}
+
+/* ---------- Celular: composição própria, identidade no topo ---------- */
+@media(max-width:760px){
+ .section{padding-block:76px}
+ .hero,.care-layout{grid-template-columns:1fr}
+ .care-layout{gap:36px}
+ .hero{gap:0;padding-top:26px;padding-bottom:56px}
+ .hero-copy{display:contents}
+ .hero-id{grid-row:1;gap:10px;margin-bottom:22px}
+ .hero-name{font-size:29px}
+ .hero h1{grid-row:2;font-size:clamp(46px,12vw,62px);margin-bottom:28px}
+ .hero-photo{grid-row:3;margin-bottom:22px}
+ .hero-photo picture{aspect-ratio:5/4}
+ .hero-photo img{object-position:50% 22%}
+ .hero-lead{grid-row:4;font-size:21px}
+ .hero-actions{grid-row:5;margin-top:26px;align-items:stretch}
+ .hero-facts{grid-row:6;margin-top:36px;padding-top:0;border-top:0}
+ .hero-facts>div:first-child{border-top:1px solid var(--line);padding-top:14px}
+ .hero-facts>div{grid-template-columns:100px 1fr;padding:14px 0}
+ .future h2{font-size:clamp(40px,10.5vw,52px)}
+ .future-list li{grid-template-columns:40px 1fr;font-size:28px;padding:17px 0}
+ .body-copy .care-statement{font-size:28px}
+ .care-steps li{padding-inline:0}
+ .care-steps li>span{font-size:30px}
+ .stories-grid figure:first-child blockquote{font-size:30px}
+ .stories-grid figure:not(:first-child) blockquote{font-size:24px}
+ .page-hero .section-heading>.intro{grid-column:1/-1}
+ .page-hero h1{font-size:clamp(46px,12vw,64px)}
+ .pillars-grid{grid-template-columns:1fr}
+ .pillar:nth-last-child(-n+2){border-bottom:0}
+ .pillar:last-child{border-bottom:1px solid var(--line)}
+ .pillar summary{grid-template-columns:36px 1fr;padding:24px 0}
+ .pillar-detail{padding:0 0 26px 52px}
+ .tools-grid{gap:0}
+ .tool-card{padding:28px 0 32px}
+}
+@media(max-width:480px){
+ .hero-facts>div{grid-template-columns:1fr;gap:4px}
+ .location-card{padding:28px 0}
+}
+@media print{.reveal-pending{opacity:1!important}.hero-facts{break-inside:avoid}}

@@ -1,0 +1,114 @@
+/* Versão refinada da home (proposta de 13/11/2026).
+   Mesmos textos, mesma ordem de seções e mesma identidade v2. Muda só apresentação, imagem, movimento e peso.
+   Carregado depois de site.css, refino.css, editorial.css e limpa.css; usado apenas por index-refinada.html. */
+
+/* ---------- Peso: a Archivo só rotula; versão reduzida (25 KB no lugar de 130 KB) ---------- */
+@font-face{font-family:"Archivo Etiqueta";src:url('fonts/Archivo-Etiqueta.woff2') format('woff2');font-weight:400 700;font-display:swap}
+:root{--caps:"Archivo Etiqueta",system-ui,sans-serif}
+
+/* ---------- Superfícies do navegador no tom da marca ---------- */
+html{scrollbar-color:rgba(11,22,40,.38) var(--paper)}
+main{overflow-x:clip}
+
+/* ---------- Cabeçalho: mais fino ao rolar, assume o navy das seções escuras ---------- */
+.header{transition:background-color 320ms ease,color 320ms ease,border-color 320ms ease}
+.header-inner{transition:height 320ms var(--ease-editorial)}
+body:not(.menu-open) .header.on-navy{background:var(--navy);color:var(--paper);--line:rgba(196,168,130,.28)}
+body:not(.menu-open) .header.on-navy::after{background:var(--gold)}
+body:not(.menu-open) .header.on-navy .desktop-nav a::after{background:var(--gold)}
+body:not(.menu-open) .header.on-navy .menu-button span{background:var(--paper)}
+body:not(.menu-open) .header.on-navy :focus-visible{outline-color:var(--paper)}
+@media(min-width:761px){.header.is-compact .header-inner{height:68px}}
+
+/* ---------- Botões: preenchimento que sobe, no lugar da troca seca de cor ---------- */
+.button{background:linear-gradient(var(--gold),var(--gold)) no-repeat 0 100%/100% 0 var(--navy);transition:background-size 380ms var(--ease-editorial),color 220ms ease,border-color 220ms ease}
+.button:hover{background:linear-gradient(var(--gold),var(--gold)) no-repeat 0 100%/100% 100% var(--navy);color:var(--navy);border-color:var(--gold)}
+.button-outline,.button-outline:hover{background-color:transparent}
+.button-light,body:not(.menu-open) .header.on-navy .button-small{background-color:var(--paper);color:var(--navy);border-color:var(--paper)}
+.button-light:hover,body:not(.menu-open) .header.on-navy .button-small:hover{background-color:var(--paper);color:var(--navy);border-color:var(--gold)}
+.location-card .button{background:linear-gradient(var(--navy),var(--navy)) no-repeat 0 100%/100% 0 transparent;color:var(--navy);border-color:var(--navy)}
+.location-card .button:hover{background:linear-gradient(var(--navy),var(--navy)) no-repeat 0 100%/100% 100% transparent;color:var(--paper);border-color:var(--navy)}
+
+/* ---------- Hero: o retrato ocupa a altura inteira e encosta no bloco navy (emenda reta) ---------- */
+@media(min-width:901px){
+ .hero{grid-template-columns:minmax(0,1fr) minmax(0,.92fr);padding-top:0;padding-bottom:0;min-height:min(calc(100svh - 88px),860px)}
+ .hero-copy{padding-block:clamp(48px,6vw,88px)}
+ .hero-photo img{object-position:58% 26%}
+}
+@media(max-width:760px){
+ .hero{padding-bottom:0}
+ .hero-photo{margin-inline:calc(var(--gutter) * -1);margin-bottom:26px}
+ .hero-photo picture{aspect-ratio:1/1}
+ .hero-photo img{object-position:50% 16%}
+ .hero-actions{padding-bottom:56px}
+}
+
+/* ---------- Aos 70: régua do tempo. O trecho percorrido fica dourado e cada resposta acende ao passar ---------- */
+.future-list{position:relative;padding-left:40px;border-bottom:0}
+.future-list::before{content:"";position:absolute;left:7px;top:var(--r0,0px);bottom:var(--r1,0px);width:2px;background:rgba(122,142,168,.42)}
+.future-list::after{content:"";position:absolute;left:6px;top:var(--r0,0px);width:4px;height:calc(var(--p,1) * (100% - var(--r0,0px) - var(--r1,0px)));background:var(--gold)}
+.future-list li{position:relative;border-top:0;border-bottom:1px solid var(--line)}
+.future-list li:last-child{border-bottom:0}
+.future-list li>i{position:absolute;left:-40px;top:50%;width:16px;height:16px;margin-top:-8px;border-radius:50%;background:var(--navy);border:2px solid var(--gold);z-index:1}
+.js-ref .future-list li{transition:opacity 520ms ease}
+.js-ref .future-list li>i{transition:border-color 520ms ease,transform 520ms var(--ease-editorial)}
+.js-ref .future-list li:not(.lit){opacity:.4}
+.js-ref .future-list li:not(.lit)>i{border-color:rgba(122,142,168,.7);transform:scale(.72)}
+
+/* ---------- Cuidado médico: a frase se acende palavra a palavra com a rolagem ---------- */
+.js-ref .care-statement .w{opacity:.26;transition:opacity 420ms ease}
+.js-ref .care-statement .w.on{opacity:1}
+
+/* ---------- Fotos: cortina ao entrar e deslocamento leve com a rolagem ---------- */
+.care-photo picture,.about-photo picture{overflow:hidden}
+@media(prefers-reduced-motion:no-preference){
+ .care-photo.reveal-pending,.about-photo.reveal-pending{opacity:1}
+ .care-photo.reveal-pending picture,.about-photo.reveal-pending picture{clip-path:inset(0 0 100% 0)}
+ .care-photo.enter-view,.about-photo.enter-view{animation:none}
+ .care-photo.enter-view picture,.about-photo.enter-view picture{animation:unveil 1100ms var(--ease-editorial) both}
+ @supports (animation-timeline:view()){
+  @keyframes drift{from{transform:translateY(-3.5%) scale(1.08)}to{transform:translateY(3.5%) scale(1.08)}}
+  .hero-photo img,.care-photo img,.about-photo img{animation:drift linear both;animation-timeline:view();animation-range:cover 0% cover 100%}
+ }
+}
+
+/* ---------- Sobre: mesma chamada, agora ao lado de uma foto real ---------- */
+.about-duo{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:clamp(48px,8vw,128px);align-items:center}
+.about-duo .about-photo{margin:0}
+.about-duo .about-photo img{aspect-ratio:2/3;object-fit:cover;object-position:50% 0}
+.about-duo h2{max-width:15em}
+.about-duo .intro{max-width:30em;margin-top:28px}
+
+/* ---------- Ferramentas: a linha em foco ganha o filete; as outras recuam ---------- */
+.tools-list a{background:linear-gradient(var(--gold-ink),var(--gold-ink)) no-repeat 0 100%/0 1px;transition:background-size 480ms var(--ease-editorial),opacity 260ms ease,padding 380ms var(--ease-editorial)}
+@media(hover:hover) and (pointer:fine){
+ .tools-list:hover a{opacity:.58}
+ .tools-list a:hover,.tools-list a:focus-visible{opacity:1;background-size:100% 1px;padding-left:10px}
+ .tools-list a:hover .tool-t{text-decoration:none}
+}
+
+/* ---------- Histórias: aspas penduradas na margem, texto alinhado pela letra ---------- */
+.stories-grid blockquote{text-indent:-.42em}
+
+/* ---------- Fechamento: o monograma se monta ---------- */
+@media(prefers-reduced-motion:no-preference){
+ .js-ref .closing .mono b,.js-ref .closing .mono em{opacity:0;transition:opacity 900ms ease,transform 1100ms var(--ease-editorial)}
+ .js-ref .closing .mono b{transform:translateX(-.34em)}
+ .js-ref .closing .mono em{transform:translateX(.34em)}
+ .js-ref .closing .mono i{transform:scale(0);transition:transform 700ms var(--ease-editorial) 520ms}
+ .js-ref .closing .mono.is-in b,.js-ref .closing .mono.is-in em{opacity:1;transform:none}
+ .js-ref .closing .mono.is-in i{transform:none}
+}
+
+/* ---------- Celular e tablet ---------- */
+@media(max-width:900px){
+ .about-duo{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:36px}
+}
+@media(max-width:760px){
+ .about-duo{grid-template-columns:1fr;gap:32px}
+ .about-duo .about-photo{max-width:none;width:100%}
+ .about-duo .about-photo img{aspect-ratio:4/5;object-position:50% 0}
+ .future-list{padding-left:34px}
+ .future-list li>i{left:-34px}
+}
+@media print{.js-ref .future-list li,.js-ref .care-statement .w{opacity:1!important}}

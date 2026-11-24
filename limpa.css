@@ -1,0 +1,4 @@
+/* Versão limpa (11/11/2026): só ajustes de respiro após retirar itens repetidos. */
+.location-card h3{margin-bottom:22px}
+/* SP não repete "Heal Institute" no rótulo: compensa a altura do rótulo (rótulo + margens) para alinhar os três cartões. */
+#heal-sp h3{margin-top:41px}
